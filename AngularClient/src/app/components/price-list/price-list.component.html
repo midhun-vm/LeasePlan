@@ -1,0 +1,29 @@
+<span class="table-add float-right mb-3 mr-2">
+  <a routerLink="/updatePriceList" class="text-success">
+    <span class="label label-info">Add</span><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a></span>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Make Name</th>
+      <th scope="col">Model Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Option Name</th>
+      <th scope="col">Option Price</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let list of priceList">
+      <td>{{list.id}}</td>
+      <td>{{list.makeName}}</td>
+      <td>{{list.modelName}}</td>
+      <td>{{list.price |currency:'EUR':true}}</td>
+      <td>{{list.optionName}}</td>
+      <td>{{list.optionPrice |currency:'EUR':true}}</td>
+      <td><i class="fa fa-edit edit-icon click" (click)="updateVehicle(list)"></i></td>
+      <td (click)="deleteVehicle(list.id)"><i class="fa fa-trash click delete-icon"></i></td>
+    </tr>
+  </tbody>
+</table>

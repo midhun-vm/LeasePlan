@@ -1,0 +1,55 @@
+<h3 class="edit-head">Vehicle Price List Update</h3>
+<div class="div-save">
+  <form name="vehiclePriceDetails">
+    <div class="row">
+      <div class="col">
+        <label for="formGroupExampleInput">Make Name</label>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" [(ngModel)]="vehiclePrice.makeName" name="makeName"
+          placeholder="Make Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="formGroupExampleInput">Model Name</label>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" [(ngModel)]="vehiclePrice.modelName" name="modelName"
+          placeholder="Model Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="formGroupExampleInput">Price</label>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" [(ngModel)]="vehiclePrice.price" name="price" placeholder="Price">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="formGroupExampleInput">Option Name</label>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" [(ngModel)]="vehiclePrice.optionName" name="optionName"
+          placeholder="Option Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="formGroupExampleInput">Option Price</label>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" [(ngModel)]="vehiclePrice.optionPrice" name="optionPrice"
+          placeholder="Option Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-primary pull-right save-btn" (click)="saveDetails()">Save</button>
+      </div>
+    </div>
+
+  </form>
+</div>

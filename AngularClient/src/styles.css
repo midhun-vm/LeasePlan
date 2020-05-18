@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.click{
+    cursor: pointer;
+}
+
+.edit-head{
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 20px;
+
+}
